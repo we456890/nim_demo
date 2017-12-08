@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/shape_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:id="@+id/viewed"
+            android:layout_width="7dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/bmxt_consent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/remiurserjob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报销单编号：GT201710300001"
+                    android:textColor="#939393"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/frameTyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="审核中"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/dotted_line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_dotted_line"
+                />
+            <TextView
+                android:id="@+id/remiurseHole"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="总金额：\t￥1000.00"/>
+            <TextView
+                android:id="@+id/reimurser"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/color_grey_999999"
+                android:text="报销人:王凯"/>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/docs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发票数:8张"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/reimurseTime"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="申请时间:2017-09-28"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

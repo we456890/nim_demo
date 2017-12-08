@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp">
+        <include layout="@layout/menu_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <EditText
+                android:background="@null"
+                android:id="@+id/ar_update_autotitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="补交昨天日报"
+                android:textColor="@color/color_grey_666666"
+                android:textSize="21sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/color849fff" />
+
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:hint="请输入你要输入的内容..."
+                    android:layout_marginRight="18dp"
+                    android:id="@+id/ar_update_context"
+                    android:textSize="20sp"
+                    android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/ar_update_submit"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_staff_detail"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="31dp" />
+</RelativeLayout>

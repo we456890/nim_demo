@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etdemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ar_selecttime"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_life_search"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_searchview" />
+
+        <TextView
+            android:id="@+id/menu_tv_searchTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="搜索"
+            android:textColor="#666"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <!--<ListView-->
+        <!--android:scrollbars="none"-->
+        <!--android:id="@+id/staffmenu_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="#00000000"-->
+        <!--android:dividerHeight="19dp"/>-->
+
+        <com.ajguan.library.EasyRefreshLayout
+            android:id="@+id/staffcheck_easylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/staffcheck_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </com.ajguan.library.EasyRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

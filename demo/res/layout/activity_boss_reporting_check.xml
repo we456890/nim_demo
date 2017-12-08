@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/menu_title"
+        android:id="@+id/title"/>
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ar_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="2017/8/10工作汇报"
+                android:textColor="@color/color_grey_666666"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ar_detail_autotitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="补交昨天日报"
+                android:textColor="@color/color_grey_666666"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/color849fff" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                android:scrollbars="none">
+
+                <TextView
+                    android:id="@+id/ar_detail_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="18dp"
+                    android:text="\t\t\t\t由于昨天公司举办了一次大型的促销活动，所以日报推迟到今天来交。昨天的活动举行的非常成功，老客户带来了新客户。由于昨天公司举办了一次大型的促销活动，所以日报推迟到今天来交。昨天的活动举行的非常成功，老客户带来了新客户。由于昨天公司举办了一次大型的促销活动，所以日报推迟到今天来交。昨天的活动举行的非常成功，老客户带来了新客户。 由于昨天公司举办了一次大型的促销活动，所以日报推迟到今天来交。昨天的活动举行的非常成功，老客户带来了新客户。"
+                    android:textSize="14sp" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇报人:"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/ar_detail_reporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="29dp"
+                    android:text="田小青"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ar_detail_reporttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="11dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="4dp"
+                android:text="2017/8/11"
+                android:textColor="@color/color_grey_999999" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/coloreef3ff" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="11dp"
+                android:text="批示"
+                android:textColor="@color/colorFF612A"
+                android:textSize="16sp" />
+
+            <ListView
+                android:id="@+id/lvboss_reporing_command"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:scrollbars="none"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_detail"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ar_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+            android:hint="请输入你的评论"
+            android:maxHeight="72dip"
+            android:maxLines="4"
+            android:textColor="@color/color_black_ff666666"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C9D5FF" />
+
+        <Button
+            android:id="@+id/ar_detail_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="发表"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

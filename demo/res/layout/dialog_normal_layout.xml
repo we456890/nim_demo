@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#0b64b4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="市政协会议材料下载"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:max="100"
+                    android:minHeight="50dp"
+                    android:minWidth="40dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_selector" />
+
+                <TextView
+                    android:id="@+id/jindu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:text="0%"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shuliang"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:paddingBottom="15dp"
+                android:paddingRight="40dp"
+                android:text="(当前下载: 2/20)"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_grey_999999"
+                android:gravity="center"
+                android:text="后台下载" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/shape_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:id="@+id/viewed"
+            android:layout_width="7dp"
+            android:layout_height="110dp"
+            android:background="@mipmap/bmxt_consent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/borrowjob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GT201710300001"
+                    android:textColor="#939393"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/borrow_money_flow"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="审核中"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/dotted_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_grey_999999"
+                />
+
+            <TextView
+                android:id="@+id/borrow_money_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="总金额：\t￥1000.00"
+                android:textColor="@color/colortitle"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/borrow_money_cause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="由于昨天举办了一个大型活动，所以日报推迟到今天提交。昨天的活，所以日报，所以日报，所以日报，所以日报"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/borrow_money_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_grey_999999"
+                    android:text="报销人:王凯"/>
+
+                <TextView
+                    android:id="@+id/borrow_money_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="申请时间:2017-09-28"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

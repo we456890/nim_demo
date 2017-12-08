@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/menu_title" />
+    <RelativeLayout
+        android:id="@+id/bc_end"
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:background="@mipmap/borrow_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bc_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="借款金额:2000.0元"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bc_money"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/borrow_cause"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5">
+            <TextView
+                android:id="@+id/bc_cause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\t\t\t\t由于新进了一批98型号的煤炭号的煤炭，数量过号的煤炭，数量过号的煤炭，数量过号的煤炭，数量过号的煤炭，数量过，数量过多超出了预期（超出100吨），分公司本来预算200万超出40万至此申请40万金额。"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </ScrollView>
+        <TextView
+            android:id="@+id/borrow_flow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/borrow_flow"
+            android:layout_alignEnd="@+id/bc_time"
+            android:layout_marginBottom="6dp"
+            >
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/user_head"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/borrow_approvename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/user_head"
+                android:text="申请人:李四"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bc_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="借款时间:2017-10-10"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/ededed" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bmcheck_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="@string/borrow_comment"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/bc_postil"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="25dp"-->
+            <!--android:background="@null"-->
+            <!--android:maxLines="5"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:hint="请输入你的批示..."-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+            <!--android:id="@+id/bc_consent"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="同意"-->
+            <!--style="@style/Widget.AppCompat.Button.Colored"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/bc_reject"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:theme="@style/AppTheme.Button"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="拒绝" />-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/bc_approval"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/approval"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="审批"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bcrl_postil"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/borrow_comment"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bc_postil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@null"
+                    android:maxLines="5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="请输入你的批示..."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bc_consent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="同意"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+                <Button
+                    android:id="@+id/bc_reject"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:theme="@style/AppTheme.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="拒绝" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

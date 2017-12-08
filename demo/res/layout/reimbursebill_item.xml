@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.netease.nim.uikit.recent.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/sil"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:minHeight="71dip"-->
+    <!--android:layout_marginBottom="1dp"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:background="#FDFDFD"-->
+    <!--&gt;-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="71dip"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#FDFDFD"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/rbitem_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额:￥1000.00"
+                    android:textColor="@color/color_grey_F80964"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rbitem_num"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="序号:0001"
+                    android:textColor="@color/color_grey_828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rbitem_cause"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:text="说明:演出需要搭台与请演员商演报销搭台与请演员商演报销搭搭台与搭台"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/rbitem_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类别:商演报销"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rbitem_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:text="发票日期:2017-10-29"
+                    android:textColor="@color/color_grey_828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<Button-->
+            <!--android:id="@+id/delete"-->
+            <!--android:text="删除"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:background="@color/color_red_ccfa3c55"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>
+
+
+
+

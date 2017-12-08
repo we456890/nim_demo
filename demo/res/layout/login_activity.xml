@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_head" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_head_text" />
+
+
+    <EditText
+        android:id="@+id/edit_login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@mipmap/user_account_icon"
+        android:hint="@string/login_hint_account"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edit_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/user_pwd_lock_icon"
+        android:hint="@string/login_hint_password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:longClickable="false"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/login_tip"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/login_btn_yes"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:paddingBottom="12sp"
+        android:text="技术支持:南京永坤信息科技有限公司"
+        android:textColor="@color/colorC4D1FF"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+

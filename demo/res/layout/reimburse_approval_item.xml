@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/bmshape_item"
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bmxt_consent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <TextView
+           android:layout_marginLeft="20dp"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:text="批复:"/>
+        <TextView
+            android:id="@+id/reply_state"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="同意"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/reply_cause"
+        android:layout_marginRight="19dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="14sp"
+        android:textColor="@color/text464646"
+        android:text="\t\t\t\t超出预期的问题是出在那里的原因呢，之后如果在出现呢，根本问题找 出来这次就算了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_height="1dp"
+        android:background="@color/black80"/>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/reply_branch"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:textColor="@color/text464646"
+            android:text="批复部门:程序部"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/reply_result"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/reply_branch"
+            android:textSize="14sp"
+            android:textColor="@color/text464646"
+            android:text="批复结果:同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/reply_time"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/reply_result"
+            android:textSize="14sp"
+            android:textColor="@color/text464646"
+            android:text="批复时间:2017-10-23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/user_head"
+                android:layout_centerHorizontal="true"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="2dp"
+                />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/borrow_approvename"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/user_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="批复人:王凯"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
