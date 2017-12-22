@@ -20,7 +20,7 @@ ext {
     minSdkVersion = 19
     targetSdkVersion = 25
     versionCode = 36
-    versionName = '1.2.16'
+    versionName = '1.2.17'
     targetCompatibility = 1.7
     sourceCompatibility = 1.7
 }

@@ -37,6 +37,8 @@
 
     <string name="holiday">请假</string>
     <string name="holiday_apply">请假申请</string>
+    <string name="holiday_content">请假详情</string>
+    <string name="holiday_conductor">请假审批</string>
     <string name="holiday_name">请假人:</string>
     <string name="holiday_fromdays">开始时间:</string>
     <string name="holiday_todays">结束时间:</string>

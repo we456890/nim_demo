@@ -3,7 +3,7 @@
     package="com.netease.nim.demo"
     android:installLocation="auto"
     android:versionCode="36"
-    android:versionName = "1.2.16">
+    android:versionName = "1.2.17">
 
     <!-- 加入应用需要的权限 -->
 

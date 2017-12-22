@@ -81,7 +81,7 @@ public class HolidayCheckActivity extends UI{
         setToolBar(R.id.menu_toolbar, options);
         setTitle(R.string.nullname);
         TextView textView = (TextView) findViewById(R.id.menu_textview);
-        textView.setText(R.string.borrow_apply);
+        textView.setText(R.string.holiday_content);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.netease.nim.demo.main.fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -66,13 +67,18 @@ public class WorkBenchFragment extends MainTabFragment {
     private void findViews() {
         acache = ACache.get(getActivity());
         userDTO = (UserDTO) acache.getAsObject("user");
-        work_time=findView(R.id.work_time);
-        work_name=findView(R.id.work_name);
-        HeadImageView headImageView=findView(R.id.user_head);
-        headImageView.loadBuddyAvatar(userDTO.getAccid());
-        String name = userDTO.getRealName();
-        work_name.setText(name);
-        work_time.setText(StringUtil.getNewTime());
+        if(!userDTO.equals(null)){
+            work_time=findView(R.id.work_time);
+            work_name=findView(R.id.work_name);
+            HeadImageView headImageView=findView(R.id.user_head);
+            headImageView.loadBuddyAvatar(userDTO.getAccid());
+            String name = userDTO.getRealName();
+            work_name.setText(name);
+            work_time.setText(StringUtil.getNewTime());
+        }else{
+            Toast.makeText(getActivity(),"请重新登录",Toast.LENGTH_SHORT).show();
+        }
+
     }
     @Override
     public void onCurrent() {

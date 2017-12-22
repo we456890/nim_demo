@@ -452,7 +452,7 @@ public class WorkBenchsFragment extends TFragment {
             work_holiday_message2.setText("请假事由:"+h.get(1).getReason());
             work_holiday_name2.setText("申请人:"+h.get(1).getPrayEr());
             long time2 = h.get(1).getCreateTime();
-            work_holiday_time2.setText("申请时间:"+ StringUtil.ChangeTime(time1));
+            work_holiday_time2.setText("申请时间:"+ StringUtil.ChangeTime(time2));
         }else{
             work_holiday_two.setVisibility(View.GONE);
         }

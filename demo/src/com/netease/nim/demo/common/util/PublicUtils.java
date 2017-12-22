@@ -28,7 +28,7 @@ public class PublicUtils {
     public static final String PACKURL="http://118.31.184.230:8000/gt_beta/officialWebsite/apks/PrinterShare.apk";
 
 
-//    public static String URL = "http://192.168.1.103:8080/"; //测试地址
+//    public static String URL = "http://192.168.1.104:8080/"; //测试地址
 //    public static String URL_FILE_TAG = "manual_pure/";     //测试文件名
 
     public static String URL = "http://118.31.184.230:8000/";  //外网地址
